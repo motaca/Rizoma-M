@@ -1,0 +1,930 @@
+@import url('https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day|Open+Sans|Poiret+One|Raleway');
+
+/* ESTILOS PADRÃO */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	/*color: #7E516F;*/
+	font-family: 'Raleway';
+	background-color: #fdfdfd;
+}
+
+a:link, a:visited, a:active{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+	color: none;
+}
+
+ul, li{
+	list-style: none;
+}
+
+section{
+	padding-top: 60px;
+}
+
+h2{
+	font-family: 'Poiret One';
+	font-weight: bold;
+	color: #F1693F;
+}
+
+h1, .h1, h2, .h2, h3, .h3{
+	margin: 20px 0;
+	padding: 0;
+}
+
+#hdy, #hdb, #contato{
+	/*height: calc(100vh - 60px);*/
+	height: 100%;
+}
+
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.linha{
+	display: flex;
+}
+
+.centralizar{
+	align-items: center;
+	justify-content: center;
+}
+
+.espacoEntre{
+	justify-content: space-between;
+}
+
+.alinharVertical{
+	align-items: center;
+}
+
+.coluna{
+	flex-direction: column;
+}
+
+.botao{
+	border: none;
+	text-decoration: none;
+	background: none;
+	padding: 0 7px;
+}
+
+.centralizarTexto{
+	text-align: center;
+}
+
+/* FIM ESTILOS PADRÃO */
+
+/* CABEÇALHO */
+
+#cabecalho{
+	height: 60px;
+	position: fixed;
+	background-color: rgba(255, 255, 255, 0.90);
+	width: 100%;
+	top: 0;
+    left: 0;
+    z-index: 10;
+    border-bottom: 1px solid #eee;
+}
+
+#containerCabecalho{
+	height: 60px;
+	align-items: baseline;
+}
+
+#cabecalho #logo{
+	height: 60px;
+}
+
+#cabecalho #logo h1{
+	padding: 0;
+	margin: 0;
+	font-family: 'Dawning of a New Day';
+	font-size: 38px;
+	font-weight: bold;
+	color: #8904B1;
+}
+
+
+#cabecalho #logo h1:hover{
+	color: #04B404;
+	transition: 0.2s;
+}
+
+#menuCabecalho{
+	align-content: center;
+}
+
+#menuCabecalho a{
+	font-size: 13px;
+	padding: 0 10px;
+	color: #8904B1;
+	height: 60px;
+}
+
+#menuCabecalho a:hover{
+	color: #04B404;
+	transition: 0.2s;
+}
+
+/* FIM CABEÇALHO */
+
+/* SLIDER */
+
+#slider{
+	height: calc(100vh - 60px);
+	width: 100%;
+}
+
+#slideBox{
+	height: 100%;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.carousel-inner {
+	height: calc(100vh - 60px);
+}
+
+.carousel-inner .slide{
+	height: 100%;
+    width: 100%;
+}
+
+/* --- textos dos slides --- */
+
+.carousel-caption {
+	height: 100%;
+	z-index: 5;
+}
+
+.carousel-caption h1.textoLogo{
+	font-family: 'Dawning of a New Day';
+	font-size: 180px;
+	font-weight: bold;
+	color: #8904B1;
+	padding-bottom: 30px;
+}
+
+.como {
+	width: 33%;
+	padding: 15px;
+}
+
+.como h3{
+	align-items: baseline;
+	font-family: 'Poiret One';
+	font-weight: bold;
+	font-size: 25px;
+	color: #51F6B4;
+	height: 40px;
+}
+
+.como p{
+	text-align: center;
+	font-style: 'Open Sans';
+	font-size: 17px;
+	font-weight: bold;
+	text-shadow: none;
+}
+
+.como img{
+	width: 55%;
+}
+
+.slide2Textos{
+	align-items: baseline;
+	margin-bottom: 30px;
+}
+
+/* slide 3 - missão */
+
+.tituloMissao{
+	font-family: 'Poiret One';
+	font-size: 75px;
+	font-weight: bold;
+	color: #04B404;
+	padding: 0;
+	margin: 0;
+}
+
+.slide3textos p{
+	padding: 5px;
+	text-align: center;
+	font-size: 16px;
+	text-shadow: none;
+	width: 85%
+}
+
+.boxBotaoMissao{
+	margin-top: 20px;
+}
+
+/* fim slide 3 - missão */
+
+.carousel-indicators li{
+	height: 14px;
+	width: 14px;
+	margin: 0 5px;
+}
+
+.carousel-indicators .active{
+	height: 16px;
+	width: 16px;
+}
+
+/* --- fim textos dos slides --- */
+
+/* --- botões do slider --- */
+
+	.botaoSlider{
+		padding: 12px 20px;
+		margin: 20px;
+		background-color: #F1693F;
+		color: #fdfdfd;
+		border-radius: 5px;
+		/*border-bottom: 1px solid #bfbfbf;*/
+		/*border-right: 1px solid #bfbfbf;*/
+		text-shadow: none;
+		font-family: 'Open Sans';
+		font-size: 15px;
+		
+	}
+
+	.botaoSlider:hover{
+		font-weight: bold;
+		color: #fdfdfd;
+	}
+	
+	.botaoSaibaMais01{
+		padding: 8px 15px;
+		margin: 10px;
+		color: #fdfdfd;
+		border-bottom: 1px solid #04B404;
+		text-shadow: none;
+		font-family: 'Open Sans';
+		font-size: 15px;
+		font-weight: bold;
+	}
+
+	.botaoSaibaMais01:hover{
+		font-weight: bold;
+		color: #0B6138;
+	}
+
+/* --- fim botões do slider --- */
+
+/* FIM SLIDER */
+
+/* CALENDÁRIO */
+
+#introCalendario{
+	text-align: center;
+	font-weight: black;
+	color: #6b6b6b;
+}
+
+#containerIntroCalendario{
+	background-color: #f7f7f7;
+	padding: 5px;
+}
+
+/* filtro calendário*/
+#filtroCalendario{
+	padding: 40px 5px;
+}
+
+#filtroCalendario select{
+	width: 22%;
+	border: solid #51F6B4 2px;
+	padding: 5px 15px;
+	color: #6b6b6b;
+}
+/* fim filtro calendário*/
+
+.porcentagem{
+	width: 13%;
+}
+
+/* cabeçalho calendário*/
+#cabecalhoCalendario{
+	justify-content: space-between;
+}
+
+#cabecalhoCalendario li{
+	text-align: center;
+	margin: 5px;
+	padding: 5px;
+	background-color: #6b6b6b;
+	color: #fdfdfd;
+}
+/* fim cabeçalho calendário*/
+
+/* cards dias do calendário */
+#diasCalendario{
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#diasCalendario li{
+	flex-direction: column;
+	height: 20%;
+	padding: 5px;
+	margin: 5px;
+	border-bottom: solid #bfbfbf 1px;
+	border-right: solid #bfbfbf 1px;
+	border-left: 3px solid #fdfdfd;
+	border-top: 3px solid #fdfdfd;
+
+	font-size: 14px;
+	color: #0a0a0a;
+	background-color: #FFFFFF;
+}
+
+#diasCalendario li:hover:not(.passado){
+	border: 2px solid #F1693F;
+}
+
+#diasCalendario span{
+	padding-bottom: 3px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+#diasCalendario .dia{
+		text-align: right;
+		justify-content: flex-end;
+		margin-right: 5px;
+		padding: 5px;
+		padding-bottom: 10px;
+		font-family: 'Poiret One';
+		font-size: 14px;
+		font-weight: bolder;
+		color: #F1693F;
+}
+
+#diasCalendario .hora{
+	color: #0a0a0a;
+	font-family: 'Open Sans';
+	font-weight: bold;
+}
+
+#diasCalendario .hora:hover{
+	color: #F1693F;
+}
+
+#diasCalendario .local{
+	padding-bottom: 14px;
+}
+
+#diasCalendario .local:hover{
+	color: #F1693F;
+}
+
+/*#diasCalendario .modalidade;
+#diasCalendario .nivel;*/
+
+#diasCalendario .preco{
+	font-size: 16px;
+	font-family: 'Open Sans';
+	font-weight: bold;
+	padding-top: 7px;
+}
+
+#diasCalendario .preco:hover{
+	color: #F1693F;
+}
+
+/* botões calendário */
+
+#diasCalendario .botoes{
+	align-items: center;
+	padding: 5px;
+}
+
+	/* botão doação */
+	.botaoDoacao{
+		color: #F1693F;
+		width: 35px;
+	  	height: 35px;
+	  	font-size: 22px;
+	  	cursor: pointer;
+	  	border: 0;
+	  	outline: 0;
+	  	padding: 0
+	}
+	/* botão doação */
+
+	/* botão menos e mais */
+	.botaoMaisEMenos {
+	  color: #51F6B4;
+	  background: none;
+	  width: 35px;
+	  height: 35px;
+	  position: relative;
+	  font-size: 22px;
+	  cursor: pointer;
+	  border: 0;
+	  outline: 0;
+	  padding: 0
+	}
+	.plus,
+	.minus {
+	  color: #51F6B4;
+	  padding: 10px;
+	  width: 35px;
+	  height: 35px;
+	  line-height: 22px;
+	  display: block;
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  text-align: center;
+	  box-sizing: border-box;
+	  transition: .5s all ease-out;
+	}
+	.plus {
+	  opacity: 1;
+	  transform: rotate(0deg);
+	}
+	.botaoMaisEMenos.active .plus {
+	  opacity: 0;
+	  transform: rotate(90deg);
+	}
+	.minus {
+	  opacity: 0;
+	  transform: rotate(-90deg);
+	}
+	.botaoMaisEMenos.active .minus {
+	  opacity: 1;
+	  transform: rotate(0deg);
+	}
+	/* fim botão menos e mais  */
+
+
+#diasCalendario li.passado{
+	background-color: #f7f7f7;
+}
+
+#diasCalendario li.desaparecer{
+	opacity: 0;
+}
+
+.diaCard {
+	transition: 0.2s;
+}
+
+.diaCard.dia-inativo {
+	opacity: 0.2;
+}
+
+/* fim cards dias do calendário */
+
+/* FIM CALENDÁRIO */
+
+/* --- CARDS DAS PRÓXIMAS SEÇÕES --- */
+
+.card {
+	width: 28%;
+	padding: 20px;
+	background-color: #ffffff;
+	border: 1px solid #ffffff;
+}
+
+.card:hover{
+	border-bottom: 1px solid #51F6B4;
+	border-right: 1px solid #51F6B4;
+	background-color: #f7f7f7;
+}
+
+.card p{
+	text-align: justify;
+}
+
+.cards h3{
+	font-family: 'Poiret One';
+	font-weight: bold;
+	color: #F1693F;
+}
+
+/* --- FIM CARDS DAS PRÓXIMAS SEÇÕES  --- */
+
+/* SEÇÃO HORA DA YOGA */
+
+#hdy{
+	border-top: 1px solid #f7f7f7;
+}
+
+.hdyContainerTexto{
+	padding-bottom: 50px;
+}
+
+.hdyContainerTexto h2{
+	/*padding-bottom: 25px;*/
+}
+
+.imagemHdy{
+	margin: 0 auto;
+}
+
+.cards img{
+	width: 60%;
+	padding: 10px;
+}
+
+#hdy .card p{
+	padding: 20px;
+}
+
+/* FIM SEÇÃO HORA DA YOGA */
+
+/* SEÇÃO HORA DO BEM */
+
+#hdb{
+	padding-bottom: 60px;
+	margin-top: 60px;
+	background-image: url("../img/r5.png");
+	object-fit: cover;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: none;
+}
+
+.tituloHDB{
+	/*font-family: 'Dawning+of+a+New+Day';*/
+	font-size: 40px;
+	color: #51F6B4;
+
+}
+
+.subtituloHDB{
+	color: #737373;
+}
+
+.hdbTexto{
+/*	background-color: rgba(247, 247, 247, 0.20);
+*/}
+
+.hdbTexto p{
+	text-align: center;
+	width: 75%;
+	font-size: 15px;
+	/*font-weight: bold;*/
+	padding: 3px 0;
+	margin: 0;
+	color: #737373;
+}
+
+/* div instituição do mês */
+
+#instituicaoMes{
+	margin-top: 25px;
+	width: 75%;
+	background-color: rgba(247, 247, 247, 0.25);
+	border-radius: 15px;
+	padding: 0 50px;
+}
+
+#instituicaoMes h2{
+	color: #51F6B4;
+}
+
+.instituicaoImg img{
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	border: 2px solid #51F6B4;
+	padding: 10px;
+}
+
+.instituicaoTextoBox{
+	padding-left: 40px;
+	align-items: baseline;
+}
+
+.instituicaoTexto{
+	height: 70%;
+	width: 60%;
+	color: #0a0a0a;
+}
+
+.instituicaoTexto h3,
+.instituicaoTexto h4{
+	margin: 0;
+	padding: 5px;
+	font-weight: bold;
+	font-family: 'Open Sans';
+}
+
+.instituicaoTexto p{
+	color: #fdfdfd;
+}
+
+.instituicaoInfo{
+	padding-left: 50px;
+	justify-content: space-between;
+	height: 100%;
+	color: #0a0a0a;
+}
+
+.instituicaoInfo a,
+.hdbTextoMS a{
+	color: #fdfdfd;
+}
+
+.instituicaoInfo a:hover,
+.hdbTextoMS a:hover{
+	color: #51F6B4;
+}
+
+.hdbTextoMS a{
+	margin: 5px 10px;
+}
+
+.botaoDoacao02{
+	font-family: 'Open Sans';
+	font-weight: bold;
+	font-size: 16px;
+	padding: 12px 20px;
+	margin: 20px auto;
+	color: #fdfdfd;
+	background-color: #F1693F;
+	width: 30%;
+	align-items: baseline;
+	text-align: center;
+	align-items: center;
+	height: 100%;
+	border-radius: 5px;
+}
+
+/* fim div instituição do mês */
+
+
+
+/* FIM SEÇÃO HORA DO BEM  */
+
+/*DEPOIMENTOS*/
+
+#depoimentos{
+	justify-content: flex-start;
+	align-items: center;
+	height: 100%;
+}
+
+#depoimentos h2{
+	width: 100%;
+}
+
+.containerDepoimentos{
+	width: 80%;
+	align-items: baseline;
+	padding: 40px 0;
+}
+
+.containerDepoimentos h3{
+	font-family: 'Poiret One';
+	font-weight: bold;
+	color: #51F6B4;
+}
+
+.containerDepoimentos p{
+	color: #0a0a0a;
+}
+
+#depoimentos.card.depoimentos{
+	height: 500px;
+}
+
+#depoimentos img{
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	filter: grayscale(100%);
+}
+
+#depoimentos img:hover{
+	filter: none;
+}
+
+/*FIM DEPOIMENTOS*/
+
+/* CONTATO */
+
+/* FIM CONTATO */
+
+/* RODAPE */
+
+#rodape{
+	background-color: #0a0a0a;	
+}
+
+.containerRodape{
+	padding: 20px 0;
+}
+
+.containerRodape span{
+	font-family: 'Dawning of a New Day';
+	font-weight: bold;
+	font-size: 30px;
+	color: #F1693F;
+}
+
+.containerRodape p{
+	color: #fdfdfd;
+}
+
+/* FIM RODAPE */
+
+/* FORM */
+
+.formErrado{
+	border-color: red !important;
+}
+
+.dadosGerais{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 15px;
+
+
+}
+
+.dadosGerais .form-group{
+	flex: 1 1 50%;
+	
+}
+
+.endereco{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 15px;
+
+}
+
+.endereco .form-group{
+	flex: 1 1 50%;
+}
+
+.botaoForm{
+	background-color: #F1693F;
+	color:#fdfdfd;
+	text-shadow: none;
+	width: 100%;
+	padding: 12px 20px;
+}
+
+.modalCadastrar input {
+	/*margin: 8p*/x;
+}
+
+/* FIM FORM*/
+
+/* MODAL */
+
+/*MODAL HDB*/
+
+.botaoModalHDB.navegar{
+	background-color: #F1693F;
+	color:#fdfdfd;
+	text-shadow: none;
+	width: 40%;
+	padding: 12px 20px;	 	 	
+}
+
+.botaoModalHDB.pagar{
+	background-color: #51F6B4;
+	color:#fdfdfd;
+	text-shadow: none;
+	width: 50%;
+	padding: 12px 20px;
+}
+
+.modal-footer.modalHDB{
+	display: flex;
+    justify-content: space-between;
+	
+}
+
+.midiasModalHDB a{
+	margin: 5px 10px;
+	color: #F1693F;
+}
+
+.midiasModalHDB a:hover{
+	color: #51F6B4;
+}
+
+/*FIM MODAL HDB*/
+
+/*MODAL ADD CARRINHO*/
+
+.botaoModalAdd.navegar{
+	background-color: #F1693F;
+	color:#fdfdfd;
+	text-shadow: none;
+	width: 40%;
+	padding: 12px 20px;	 	 	
+}
+
+.botaoModalAdd.pagar{
+	background-color: #51F6B4;
+	color:#fdfdfd;
+	text-shadow: none;
+	width: 50%;
+	padding: 12px 20px;
+	border: none;
+}
+
+.modal-footer.botaoModalAdd{
+	/*display: flex;*/
+    /*justify-content: space-between;*/
+	
+}
+
+
+/*FIM MODAL ADD CARRINHO*/
+
+/* FIM MODAL*/
+
+/* FORM CONTATO */
+
+#contato{
+	padding-bottom: 60px;
+}
+
+.faleConosco{
+	/*width: 75%;*/
+	margin: 0 auto;
+}
+
+.formularioContato input {
+	/*width: 80%;*/
+	height: 30px;
+	border-radius: 5px;
+	border-style: none;
+	border: solid #bfbfbf 1px;
+	margin-bottom: 15px;
+
+}
+
+.formularioContato textarea{
+/*	width: 80%;
+*/	border-radius: 5px;
+	border-style: none;
+	border: solid #bfbfbf 1px;
+	
+}
+
+.contatoFormularioContato{
+	margin-top: 20px;	
+}
+
+.contatoFormularioContato a{
+	color: #0a0a0a;
+}
+
+.contatoFormularioContato a:hover{
+	color: #51F6B4;
+}
+
+/*.contatoFormularioContato label{
+	margin-bottom: 20px;
+	*/
+.contatoMidiasSocias{
+	padding-top: 20px;
+}
+
+.botaoFormularioContato{
+	background-color: #F1693F;
+	color:#fdfdfd;
+	text-shadow: none;
+	/*width: 80%;*/
+	padding: 12px 20px;
+	border-radius: 5px;
+	margin-top: 10px;
+
+}
+
+.nome, .email, .mensagem{
+	width: 100%;
+}
+
+
+
+/* FIM FORM CONTATO */
